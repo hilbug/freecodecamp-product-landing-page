@@ -1,0 +1,34 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
+
+body {
+    background-color: #ddaf49;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 2px;
+}
+
+#header-img > img {
+    border-radius: 50%;
+}
+
+.smaller-image {
+    width: 300px;
+}
+
+/* #offerings {
+    
+}
+
+#pricing {
+    
+}
+
+#about-us {
+    
+} */
