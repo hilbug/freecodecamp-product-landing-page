@@ -1,9 +1,40 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #ddaf49;
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #88c9f9;
+    background-color: #ddaf49;
+    width: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    overflow: auto;
+    margin-top: 50px;
 }
 
 h1, 
@@ -13,22 +44,83 @@ h3 {
     letter-spacing: 2px;
 }
 
+li {
+    list-style: none;
+}
+
+.nav-bar a {
+    margin: 0 .5rem 0 .5rem;
+    text-decoration: none;
+}
+
+.header-logo {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
 #header-img > img {
     border-radius: 50%;
 }
 
+.nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.page-button {
+    background-color: white;
+    color: #5c913b;
+    padding: 6px;
+}
+
+.rounded-border {
+    border-radius: 15px;
+}
+
+
 .smaller-image {
-    width: 300px;
+    width: 75px;
 }
 
-/* #offerings {
-    
-}
 
-#pricing {
-    
-}
 
-#about-us {
-    
-} */
+/* CSS TRICKS */
+/* Medium screens */
+@media all and (max-width: 800px) {
+    header {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+
+    .nav-bar {
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        margin-top: 75px;
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    header {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+
+  /* 
+  
+  Resources 
+  FlexBox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#basics-and-terminology
+  
+  */

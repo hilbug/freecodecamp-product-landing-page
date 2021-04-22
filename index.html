@@ -10,52 +10,62 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header id="header">
-        <nav id="nav-bar">
-            <a href="#offerings" class="nav-link">Offerings</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#about-us" class="nav-link">About Us</a>
-        </nav>
-
         <!-- IMAGE -->
-        <img id="header-img"
-            src="https://github.com/hilbug/freecodecamp-product-landing-page/blob/main/sunny-travel-co-logo.png?raw=true"
-            class="smaller-image" alt="sunny travel company logo">
+        <div class="header-logo">
+            <img id="header-img"
+                src="https://github.com/hilbug/freecodecamp-product-landing-page/blob/main/sunny-travel-co-logo.png?raw=true"
+                class="smaller-image" alt="sunny travel company logo">
+            <p>Sunny Travel Company</p>
+        </div>
 
+        <nav id="nav-bar" class="nav-bar">
+            <ul>
+                <li><a href="#offerings" class="nav-link page-button rounded-border">Offerings</a></li>
+                <li><a href="#pricing" class="nav-link page-button rounded-border">Pricing</a></li>
+                <li><a href="#about-us" class="nav-link page-button rounded-border">About Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- OFFERINGS -->
-    <section id="offerings">
-        <h2>Offerings</h2>
-        <h3>Why You Should Travel</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aaExiKsvt9A" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </section>
 
-    <!-- PRICING -->
-    <section id="pricing">
-        <h2>Pricing</h2>
+    <!-- CONTENT -->
+    <main class="content">
+        <!-- OFFERINGS -->
+        <section id="offerings">
+            <h2>Offerings</h2>
+            <h3>Why You Should Travel</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aaExiKsvt9A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
 
-        <!-- FORM -->
-        <h3>Ready to get started?</h3>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-            <input id="submit" type="submit">Get on your way!</input>
-        </form>
-    </section>
+        <!-- PRICING -->
+        <section id="pricing">
+            <h2>Pricing</h2>
 
-    <!-- ABOUT US -->
-    <section id="about-us">
-        <h2>About Us</h2>
+            <!-- FORM -->
+            <h3>Ready to get started?</h3>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input id="submit" type="submit" class="page-button rounded-border" value="Get on your way!"></input>
+            </form>
+        </section>
 
-        <!-- PRODUCT VIDEO -->
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AlCqyZEXM1I"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </section>
+        <!-- ABOUT US -->
+        <section id="about-us">
+            <h2>About Us</h2>
+
+            <!-- PRODUCT VIDEO -->
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AlCqyZEXM1I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+
 </body>
 
 </html>
