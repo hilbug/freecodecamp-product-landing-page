@@ -46,6 +46,39 @@ h2,
 h3 {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 2px;
+    text-align: center;
+}
+
+.intro-h1 {
+    padding-top: .5rem;
+    background-color: #5c913b;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 2px midnightblue;
+}
+
+.intro-p {
+    padding-bottom: .5rem;
+    background-color: #5c913b;
+    border-bottom: 5px solid #88c9f9;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 1px 1px midnightblue;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.section-header {
+    font-size: 2.5rem;
+    padding: 25px;
+    text-shadow: 3px 3px 2px midnightblue;
+    /* margin-bottom: 10px; */
 }
 
 input {
@@ -76,24 +109,31 @@ li {
     flex-direction: row;
 }
 
-section {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    width: 100%;
+#why-travel > iframe {
+    padding-top: 20px;
 }
 
-/* #why-travel {
-    height: 90vh;
-    justify-content: center;
-} */
+.travel-benefits {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
 
-h2 {
-    font-size: 2.5rem;
-    padding: 15px;
-    margin-bottom: 25px;
+.travel-ben-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 1.5rem; */
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: 30px;
+}
+
+.travel-ben-row > i {
+    padding: 0 50px 0 50px;
+    font-size: 50px;
+    color: #88c9f9;
+    text-shadow: 3px 3px 2px midnightblue;
 }
 
 #offerings > h3 {
@@ -178,6 +218,11 @@ form > input {
     font-size: 24px;
 }
 
+#about-us > p {
+    width: 60%;
+    font-size: 24px;
+}
+
 .rounded-border {
     border-radius: 15px;
 }
@@ -186,7 +231,11 @@ form > input {
     width: 75px;
 }
 
-.fas {
+.medium-image {
+    width: 300px;
+}
+
+li > .fas {
     padding: 2px;
 }
 
@@ -211,10 +260,14 @@ form > input {
     box-shadow: 4px 4px 15px midnightblue;
 }
 
+.text-shadow {
+    text-shadow: 1px 3px 15px midnightblue;
+}
+
 
 /* CSS TRICKS */
 /* Medium screens */
-@media all and (max-width: 800px) {
+@media all and (max-width: 850px) {
     header {
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
       justify-content: space-around;
@@ -244,6 +297,28 @@ form > input {
     iframe {
         width: 100%;
     }
+
+    .travel-benefits {
+        width: 100%;
+    }
+
+    .travel-ben-row {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .travel-ben-row > i {
+        /* top, right/left, bottom */
+        padding: 0 0 10px;
+    }
+
+    .travel-ben-row > p {
+        /* top/bottom left/right */
+        padding: 0 20px;
+        text-align: justify;
+    }
   }
   
   /* Small screens */
@@ -257,6 +332,10 @@ form > input {
   /* 
   
   Resources 
+
   FlexBox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#basics-and-terminology
+
+  FlexBox Sticky Header and Footer
+  https://codepen.io/5am/pen/xNXOGx
   
   */
