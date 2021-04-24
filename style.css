@@ -175,6 +175,7 @@ form > input {
     color: white;
     padding: 6px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .rounded-border {
@@ -202,8 +203,12 @@ form > input {
 }
 
 .price-text {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 900;
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 15px midnightblue;
 }
 
 
@@ -221,6 +226,10 @@ form > input {
 
     .content {
         margin-top: 75px;
+    }
+
+    .cards {
+        width: 100%;
     }
 
     .card {
