@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, 
+body {
     height: 100%;
 }
 
@@ -19,11 +20,12 @@ body {
     color: white;
 }
 
-header {
-    position: fixed;
+#header {
+    /* Need position: fixed; for FCC */
+    /* position: fixed;  */
     display: flex;
+    flex: 0 0 auto;
     flex-flow: row wrap;
-    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
     border-bottom: 4px solid #88c9f9;
@@ -31,10 +33,12 @@ header {
     width: 100%;
 }
 
-.content {
-    flex: 1 0 auto;
-    overflow: auto;
-    margin-top: 50px;
+main {
+    /* Need margin-top: 90px; for FCC */
+    /* margin-top: 90px; */
+    flex: 1 1 auto;
+    overflow-y: auto;
+    position: relative;
 }
 
 h1, 
@@ -80,10 +84,6 @@ section {
     margin-bottom: 50px;
     width: 100%;
 }
-
-/* section > iframe {
-    width: 100%;
-} */
 
 /* #why-travel {
     height: 90vh;
@@ -224,9 +224,10 @@ form > input {
         margin-bottom: 1rem;
     }
 
-    .content {
+    /* Might need to change for FCC */
+    /* main {
         margin-top: 75px;
-    }
+    } */
 
     .cards {
         width: 100%;
