@@ -36,9 +36,17 @@ body {
 main {
     /* Need margin-top: 90px; for FCC */
     /* margin-top: 90px; */
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; this option makes a sticky footer */
+    flex: 1 0 auto;
     overflow-y: auto;
     position: relative;
+}
+
+footer {
+    flex-shrink: 0;
+    height: 100px;
+    background-color: #5c913b;
+    border-top: 4px solid #88c9f9;
 }
 
 h1, 
@@ -221,6 +229,7 @@ form > input {
 #about-us > p {
     width: 60%;
     font-size: 24px;
+    text-align: justify;
 }
 
 .rounded-border {
@@ -232,7 +241,9 @@ form > input {
 }
 
 .medium-image {
+    margin-top: 10px;
     width: 300px;
+    border-radius: 50%;
 }
 
 li > .fas {
