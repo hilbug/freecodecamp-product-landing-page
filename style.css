@@ -18,11 +18,14 @@ body {
     background-color: #ddaf49;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    /* trying... */
+    /* overflow: hidden; */
 }
 
 #header {
     /* Need position: fixed; for FCC */
     /* position: fixed;  */
+    /* z-index:1; */
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
@@ -37,7 +40,7 @@ main {
     /* Need margin-top: 90px; for FCC */
     /* margin-top: 90px; */
     /* flex: 1 1 auto; this option makes a sticky footer */
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     overflow-y: auto;
     position: relative;
 }
@@ -47,7 +50,7 @@ footer {
     flex-direction: row wrap;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     height: 80px;
     background-color: #ddaf49;
     border-top: 4px solid #88c9f9;
@@ -122,11 +125,15 @@ li {
     align-items: center;
 }
 
-#header-img > img {
+#header-img > img,
+#footer-img {
     border-radius: 50%;
 }
 
 .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-grow: 1; */
     padding-right: 10px;
 }
 
@@ -244,6 +251,10 @@ form > input {
     font-size: 24px;
 }
 
+/* .nav-link, .header-logo > p {
+    font-size: 18px;
+} */
+
 #about-us > p {
     width: 60%;
     font-size: 24px;
@@ -303,9 +314,19 @@ li > .fas {
     }
 
     .nav-bar {
+        display: flex;
         margin-bottom: 1rem;
+        justify-content: center;
     }
 
+    /* .nav-bar > ul {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .nav-bar > ul > li {
+        margin-top: 50px;
+    }
     /* Might need to change for FCC */
     /* main {
         margin-top: 75px;
@@ -346,7 +367,8 @@ li > .fas {
     .travel-ben-row > p {
         /* top/bottom left/right */
         padding: 0 20px;
-        text-align: justify;
+        text-align: center;
+
     }
 
     footer {
@@ -359,10 +381,6 @@ li > .fas {
     #about-us > p {
         text-align: left;
     }
-
-    .travel-ben-row > p {
-        text-align: center;
-    }
   }
   
   /* Small screens */
@@ -370,6 +388,7 @@ li > .fas {
     header {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
+      align-items: center;
     }
   }
 
