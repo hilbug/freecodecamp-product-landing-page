@@ -43,10 +43,24 @@ main {
 }
 
 footer {
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
     flex-shrink: 0;
-    height: 100px;
-    background-color: #5c913b;
+    height: 80px;
+    background-color: #ddaf49;
     border-top: 4px solid #88c9f9;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+}
+
+.footer-links > p {
+    padding-right: 15px;
 }
 
 h1, 
@@ -110,6 +124,10 @@ li {
 
 #header-img > img {
     border-radius: 50%;
+}
+
+.nav-bar {
+    padding-right: 10px;
 }
 
 .nav-bar > ul {
@@ -329,6 +347,21 @@ li > .fas {
         /* top/bottom left/right */
         padding: 0 20px;
         text-align: justify;
+    }
+
+    footer {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #about-us > p {
+        text-align: left;
+    }
+
+    .travel-ben-row > p {
+        text-align: center;
     }
   }
   
