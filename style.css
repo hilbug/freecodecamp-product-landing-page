@@ -29,7 +29,7 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     border-bottom: 4px solid #88c9f9;
     background-color: #ddaf49;
@@ -305,33 +305,51 @@ li > .fas {
     text-shadow: 1px 3px 15px midnightblue;
 }
 
+.page-button.nav-link {
+    font-size: 14px;
+}
+
 
 /* CSS TRICKS */
 /* Medium screens */
 @media all and (max-width: 850px) {
+    
     header {
+        position: unset;
+        justify-content: center;
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -30px;
     }
 
     .nav-bar {
-        display: flex;
-        margin-bottom: 1rem;
+        /* display: flex;
+        flex-direction: column; */
+        padding-bottom: 20px;
         justify-content: center;
     }
 
-    /* .nav-bar > ul {
-        display: flex;
-        flex-direction: column;
-    } */
-
-    .nav-bar > ul > li {
-        margin-top: 50px;
+    .nav-bar > ul {
+        justify-content: center;
     }
+
+    /* .nav-bar > ul > li {
+        margin-top: 50px;
+    } */
     /* Might need to change for FCC */
     /* main {
         margin-top: 75px;
     } */
+
+    .intro-h1 {
+        padding-top: 1.5rem;
+    }
 
     .cards {
         width: 100%;
@@ -380,18 +398,20 @@ li > .fas {
     }
 
     #about-us > p {
-        text-align: left;
+        width: 90%;
+        text-align: justify;
+        font-size: 20px;
     }
   }
   
   /* Small screens */
-  @media all and (max-width: 500px) {
-    header {
+  /* @media all and (max-width: 500px) {
+    header { */
       /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
+      /* flex-direction: column;
       align-items: center;
     }
-  }
+  } */
 
   /* 
   
