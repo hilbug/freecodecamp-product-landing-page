@@ -204,7 +204,7 @@ li {
     background-color: #5c913b;
     width: 100%;
     color: white;
-    padding: 7px;
+    padding: 5px;
     text-align: center;
     font-weight: 900;
     font-size: 2rem;
@@ -360,6 +360,10 @@ li > .fas {
         margin-top: 50px;
     }
 
+    .card > ul {
+        font-size: 16px;
+    }
+
     form {
         width: 80%;
     }
@@ -401,7 +405,7 @@ li > .fas {
     #about-us > p {
         width: 90%;
         text-align: justify;
-        font-size: 20px;
+        font-size: 16px;
     }
   }
   
